@@ -350,10 +350,17 @@ startGame()
 
 // write your code after this line:
 
+    let rainbow = ["red", "orange", "yellow", "green", "blue", "purple", "pink", "gray", "black", "brown"];
 
+    rainbow.forEach((color) => {
+        KAREL.putBall(color);
+        KAREL.move();
+    })
 
-
-
+    // for (let i = 0; i < rainbow.length; i++) {
+    //     KAREL.putBall(rainbow[i]);
+    //     KAREL.move();
+    // }
 
 
 //do not add code below this line
